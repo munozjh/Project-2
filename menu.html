@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Central Perk</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
+<body>
+
+  <!-- MAIN HEADER-->
+  <header class="page-header">
+    <div class="navbar">
+      <a href="index.html" class="brand">
+        <img src="Imagenes/litelogo2-bn.png" alt="CentralPerk Logo" class="logo-img" />
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html" class="active-link">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="#menu-catalog" class="nav-cta">Order Now</a>
+      </nav>
+    </div>
+
+    <div class="page-banner-content">
+      <span class="hero-script">Freshly Brewed & Baked Daily</span>
+      <h1>Our Menu</h1>
+      <p class="hero-tagline">Coffee, Inclusive Cupcakes, Gourmet Croissants, Sandwiches & Fresh Juices</p>
+    </div>
+  </header>
+
+  <!-- CATALOGUE WITH FILTERS IN JS-->
+  <main id="menu-catalog" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Explore Our Offerings</span>
+        <h2>Find Your Favorite Treat</h2>
+        <p>Filter by category or dietary preference</p>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filter-bar" role="group" aria-label="Filter menu items">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="coffee">Specialty Coffee</button>
+        <button class="filter-btn" data-filter="cupcakes">Cupcakes & Muffins</button>
+        <button class="filter-btn" data-filter="croissants">Croissants</button>
+        <button class="filter-btn" data-filter="sandwiches">Sandwiches</button>
+        <button class="filter-btn" data-filter="juices">Fresh Juices</button>
+      </div>
+
+      <!-- DINAMIC COUNTER -->
+      <p id="menu-count" class="menu-count">Showing all items</p>
+
+      <!-- GRID OF PRODUCTS -->
+      <div class="menu-grid">
+
+        <!-- CAFÉS -->
+         <article class="menu-card" data-category="coffee">
+          <img src="Imagenes/americano.jpeg" alt="Americano Coffee" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Specialty Coffee</span>
+              <span class="price">$3.75</span>
+            </div>
+            <h3>Americano</h3>
+            <p>Smooth espresso shots diluted with hot water for a rich, balanced, and classic cup.</p>
+          </div>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <img src="Imagenes/latte.jpeg" alt="Central Perk House Latte" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Specialty Coffee</span>
+              <span class="price">$4.50</span>
+            </div>
+            <h3>Central Perk House Latte</h3>
+            <p>Double shot of medium-roast espresso topped with velvety steamed milk and subtle caramel notes.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <img src="Imagenes/cappuccino.jpeg" alt="90s Classic Cappuccino" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Specialty Coffee</span>
+              <span class="price">$4.25</span>
+            </div>
+            <h3>90s Classic Cappuccino</h3>
+            <p>Rich espresso balanced with thick, airy microfoam and a light dusting of cocoa powder.</p>
+          </div>
+        </article>
+
+        <!-- CUPCAKES/MUFFINS -->
+        <article class="menu-card" data-category="cupcakes">
+          <img src="Imagenes/vanillacupcake.jpeg" alt="Classic Vanilla Bean Cupcake" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Classic Cupcake</span>
+              <span class="price">$3.95</span>
+            </div>
+            <h3>Classic Vanilla Bean Cupcake</h3>
+            <p>Fluffy Madagascar vanilla sponge crowned with creamy buttercream frosting.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="cupcakes">
+          <img src="Imagenes/glutenfreechocolate.jpeg" alt="Dark Chocolate Vegan Cupcake" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge badge-diet">Vegan</span>
+              <span class="price">$4.25</span>
+            </div>
+            <h3>Dark Chocolate Vegan Cupcake</h3>
+            <p>100% plant-based cocoa cake topped with whipped dark chocolate ganache.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="cupcakes">
+          <img src="Imagenes/lemonberry.jpg" alt="Lemon Berry Gluten-Free Cupcake" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge badge-diet">Gluten-Free</span>
+              <span class="price">$4.25</span>
+            </div>
+            <h3>Lemon Berry Gluten-Free Cupcake</h3>
+            <p>Almond-flour citrus sponge finished with tangy berry cream frosting.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="cupcakes">
+          <img src="Imagenes/blueberrymuffin.jpeg" alt="Warm Blueberry Muffin" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Bakery Muffin</span>
+              <span class="price">$3.75</span>
+            </div>
+            <h3>Blueberry Streusel Muffin</h3>
+            <p>Baked golden every morning with wild blueberries and a crunchy cinnamon oat crumble.</p>
+          </div>
+        </article>
+
+        <!-- CROISSANTS -->
+        <article class="menu-card" data-category="croissants">
+          <img src="Imagenes/croissant pistacho.jpeg" alt="Roasted Pistachio Croissant" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Croissant</span>
+              <span class="price">$4.95</span>
+            </div>
+            <h3>Roasted Pistachio Croissant</h3>
+            <p>Buttery, flaky pastry filled with smooth pistachio cream and crushed roasted pistachios.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="croissants">
+          <img src="Imagenes/croissantnutella.jpg" alt="Chocolate Croissant" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Croissant</span>
+              <span class="price">$4.50</span>
+            </div>
+            <h3>Chocolate Croissant</h3>
+            <p>A golden, flaky croissant drizzled with chocolate, topped with sliced almonds, and lightly dusted with powdered sugar.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="croissants">
+          <img src="Imagenes/croissant breakfast.jpeg" alt="Savory Caprese Croissant" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Savory Croissant</span>
+              <span class="price">$5.50</span>
+            </div>
+            <h3>Savory Caprese Croissant</h3>
+            <p>Warm butter croissant layered with fresh mozzarella, vine-ripened tomato, basil, and pesto.</p>
+          </div>
+        </article>
+
+        <!-- SÁNDWICHES -->
+        <article class="menu-card" data-category="sandwiches">
+          <img src="Imagenes/grilledchickensandwich.jpeg" alt="Smoked Chicken & Avocado Ciabatta" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Sandwich</span>
+              <span class="price">$7.95</span>
+            </div>
+            <h3>Smoked Chicken & Avocado</h3>
+            <p>Burger bread with sliced chicken breast, smashed avocado, greens, and herb aioli.</p>
+          </div>
+        </article>
+
+        <!-- JUICES-->
+        <article class="menu-card" data-category="juices">
+          <img src="Imagenes/orangejuice.jpeg" alt="Freshly Squeezed Orange Juice" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Fresh Juice</span>
+              <span class="price">$4.50</span>
+            </div>
+            <h3>Freshly Squeezed Orange Juice</h3>
+            <p>100% pure cold-pressed oranges served chilled with zero added sugar.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="juices">
+          <img src="Imagenes/greenjuice.jpeg" alt="Green Orchard Revitalizer" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <span class="category-badge">Fresh Juice</span>
+              <span class="price">$5.25</span>
+            </div>
+            <h3>Green Orchard Revitalizer</h3>
+            <p>Crisp green apple, cucumber, spinach, lemon, and a touch of fresh ginger.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Central Perk</h3>
+        <p>Coffee, inclusive cupcakes, gourmet croissants, sandwiches & fresh juices.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <p>Mon – Fri: 7:00 AM – 7:00 PM</p>
+        <p>Sat – Sun: 8:00 AM – 6:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CentralPerk. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- link to js-->
+  <script src="javascript/menu.js"></script>
+</body>
+</html>

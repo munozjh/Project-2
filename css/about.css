@@ -1,0 +1,99 @@
+/* SECCIÓN HISTORIA ABOUT */
+.about-story-section {
+  padding: 80px 0;
+  background-color: #FAF6F0;
+}
+
+.about-grid {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(62, 39, 35, 0.12);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.1rem;
+  color: #3E2723;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: #5D4037;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+/* VALORES E INCLUSIÓN */
+.about-values-section {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.value-card {
+  background-color: #FAF6F0;
+  padding: 28px;
+  border-radius: 14px;
+  border-top: 4px solid #C87D55;
+  box-shadow: 0 6px 18px rgba(62, 39, 35, 0.06);
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  color: #3E2723;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  color: #5D4037;
+  font-size: 0.98rem;
+}
+
+/* CTA FINAL ABOUT */
+.about-cta-section {
+  padding: 72px 0;
+  background-color: #FAF6F0;
+  text-align: center;
+}
+
+.about-cta-box h2 {
+  font-size: 2rem;
+  color: #3E2723;
+  margin-bottom: 10px;
+}
+
+.about-cta-box p {
+  color: #5D4037;
+  margin-bottom: 24px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

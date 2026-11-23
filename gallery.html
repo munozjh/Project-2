@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Central Perk</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+  <!-- MAIN HEADER -->
+  <header class="page-header">
+    <div class="navbar">
+      <a href="index.html" class="brand">
+        <img src="Imagenes/litelogo2-bn.png" alt="CentralPerk Logo" class="logo-img" />
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html" class="active-link">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html" class="nav-cta">Order Now</a>
+      </nav>
+    </div>
+
+    <div class="page-banner-content">
+      <span class="hero-script">Moments & Flavors</span>
+      <h1>Photo Gallery</h1>
+      <p class="hero-tagline">90s Coffeehouse Vibes, Friendly Faces, Specialty Brews & Freshly Baked Treats</p>
+    </div>
+  </header>
+
+  <!-- GALLERY SECTION -->
+  <main id="gallery-catalog" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Inside Central Perk</span>
+        <h2>Snapshots From the Couch</h2>
+        <p>Explore our cozy atmosphere, team, and daily creations</p>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filter-bar" role="group" aria-label="Filter gallery photos">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="vibes">Vibes & Team</button>
+        <button class="filter-btn" data-filter="drinks">Coffee & Juices</button>
+        <button class="filter-btn" data-filter="bakery">Bakery & Bites</button>
+      </div>
+
+      <!-- DYNAMIC COUNTER -->
+      <p id="gallery-count" class="gallery-count">Showing all 10 photos</p>
+
+      <!-- GALLERY GRID -->
+      <div class="gallery-grid">
+
+        <!-- VIBES & TEAM -->
+        <figure class="gallery-card" data-category="vibes">
+          <img src="Imagenes/CentralPerkfondo.webp" alt="Central Perk 90s coffeehouse storefront" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Vibes & Team</span>
+            <h3>90s Streetfront Vibes</h3>
+            <p>Where every coffee run starts with a warm welcome.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="vibes">
+          <img src="Imagenes/CentralPerk.webp" alt="Cozy lounge atmosphere at Central Perk" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Vibes & Team</span>
+            <h3>The Cozy Hangout</h3>
+            <p>Relaxed seating made for long chats and good company.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="vibes">
+          <img src="Imagenes/staff.jpeg" alt="Central Perk barista and kitchen team" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Vibes & Team</span>
+            <h3>Meet the Crew</h3>
+            <p>The team brewing your morning cup and baking fresh batches daily.</p>
+          </figcaption>
+        </figure>
+
+        <!-- COFFEE & JUICES -->
+        <figure class="gallery-card" data-category="drinks">
+          <img src="Imagenes/latte.jpeg" alt="Central Perk House Latte" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Coffee & Juices</span>
+            <h3>House Latte Art</h3>
+            <p>Silky steamed milk poured over medium-roast espresso.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="drinks">
+          <img src="Imagenes/cappuccino.jpeg" alt="90s Classic Cappuccino" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Coffee & Juices</span>
+            <h3>Classic Cappuccino</h3>
+            <p>Bold espresso, airy microfoam, and a hint of cocoa.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="drinks">
+          <img src="Imagenes/orangejuice.jpeg" alt="Freshly Squeezed Orange Juice" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Coffee & Juices</span>
+            <h3>Cold-Pressed Citrus</h3>
+            <p>Bright, fresh orange juice squeezed every morning.</p>
+          </figcaption>
+        </figure>
+
+        <!-- BAKERY & BITES -->
+        <figure class="gallery-card" data-category="bakery">
+          <img src="Imagenes/croissant pistacho.jpeg" alt="Roasted Pistachio Croissant" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Bakery & Bites</span>
+            <h3>Pistachio Croissant</h3>
+            <p>Flaky pastry filled with smooth pistachio cream.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="bakery">
+          <img src="Imagenes/vanillacupcake.jpeg" alt="Classic Vanilla Bean Cupcake" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Bakery & Bites</span>
+            <h3>Vanilla Bean Cupcake</h3>
+            <p>Soft sponge topped with sweet vanilla buttercream.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="bakery">
+          <img src="Imagenes/blueberrymuffin.jpeg" alt="Blueberry Streusel Muffin" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Bakery & Bites</span>
+            <h3>Blueberry Streusel Muffin</h3>
+            <p>Golden morning muffin with a cinnamon oat crumble.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" data-category="bakery">
+          <img src="Imagenes/grilledchickensandwich.jpeg" alt="Smoked Chicken and Avocado Sandwich" />
+          <figcaption class="gallery-caption">
+            <span class="category-badge">Bakery & Bites</span>
+            <h3>Smoked Chicken & Avocado</h3>
+            <p>Savory lunch favorite with fresh greens and herb aioli.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Central Perk</h3>
+        <p>Coffee, inclusive cupcakes, gourmet croissants, sandwiches & fresh juices.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <p>Mon – Fri: 7:00 AM – 7:00 PM</p>
+        <p>Sat – Sun: 8:00 AM – 6:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CentralPerk. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LINK TO JS -->
+  <script src="javascript/gallery.js"></script>
+</body>
+</html>

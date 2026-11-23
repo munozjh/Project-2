@@ -1,0 +1,402 @@
+/* RESET Y ESTILOS BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FAF6F0;
+  color: #3E2723;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* NAVEGACIÓN COMPARTIDA */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 22px 0 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 92px;
+  width: auto;
+  display: block;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #c87d55;
+}
+
+.nav-menu a.active-link {
+  color: #c87d55;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.nav-cta {
+  border: 2px solid #ffffff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+/* HERO DE HOME (INDEX.HTML) */
+.hero {
+  min-height: 90vh;
+  width: 100%;
+  color: #ffffff;
+  background-image:
+    linear-gradient(rgba(18, 12, 8, 0.45), rgba(18, 12, 8, 0.55)),
+    url("../Imagenes/CentralPerkfondo.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-overlay-content {
+  width: 90%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 40px 0 0;
+}
+
+.hero-overlay-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* CABECERA COMPARTIDA DE PÁGINAS INTERIORES (ABOUT, MENU, GALLERY, CONTACT) */
+.page-header {
+  background-image:
+    linear-gradient(rgba(18, 12, 8, 0.62), rgba(18, 12, 8, 0.72)),
+    url("../Imagenes/CentralPerkfondo.webp");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-bottom: 56px;
+}
+
+.page-banner-content {
+  width: 90%;
+  max-width: 1140px;
+  margin: 28px auto 0;
+}
+
+.page-banner-content h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS Y BOTONES COMPARTIDOS */
+.hero-script {
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 24px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #c87d55;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #b06842;
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 2px solid #3E2723;
+  color: #3E2723;
+  text-decoration: none;
+  padding: 11px 22px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3E2723;
+  color: #ffffff;
+}
+
+.section-tag {
+  display: inline-block;
+  color: #9A5532;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: #3E2723;
+}
+
+.section-header p {
+  color: #6D4C41;
+}
+
+/* SECCIONES EXCLUSIVAS DE INDEX.HTML */
+.welcome-section {
+  padding: 80px 0;
+  background-color: #FAF6F0;
+}
+
+.welcome-grid {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-text h2 {
+  font-size: 2.1rem;
+  margin-bottom: 16px;
+  color: #3E2723;
+}
+
+.welcome-text p {
+  margin-bottom: 24px;
+  color: #5D4037;
+  font-size: 1.05rem;
+}
+
+.welcome-image {
+  flex: 1;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(62, 39, 35, 0.12);
+}
+
+.featured-section {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.product-card {
+  background-color: #FAF6F0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(62, 39, 35, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 22px;
+}
+
+.card-body h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #3E2723;
+}
+
+.card-body p {
+  color: #5D4037;
+  font-size: 0.98rem;
+}
+
+.center-cta {
+  text-align: center;
+  margin-top: 44px;
+}
+
+/* TESTIMONIAL COMPARTIDO */
+.testimonial-section {
+  padding: 70px 0;
+  background-color: #3E2723;
+  color: #FAF6F0;
+  text-align: center;
+}
+
+.testimonial-box {
+  width: 90%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.testimonial-box blockquote {
+  font-size: 1.35rem;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.testimonial-box cite {
+  font-style: normal;
+  color: #C87D55;
+  font-weight: bold;
+}
+
+/* FOOTER COMPARTIDO */
+.site-footer {
+  background-color: #2B1B18;
+  color: #EFEBE9;
+  padding-top: 56px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  padding-bottom: 40px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #C87D55;
+  margin-bottom: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #EFEBE9;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #C87D55;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: #BCAAA4;
+}
+
+/* RESPONSIVE COMPARTIDO */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px 0;
+  }
+
+  .logo-img {
+    height: 75px;
+    margin: 0;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero-overlay-content {
+    padding-bottom: 50px;
+  }
+
+  .welcome-grid {
+    flex-direction: column;
+  }
+
+  .cards-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
