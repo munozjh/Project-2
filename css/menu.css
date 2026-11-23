@@ -1,10 +1,10 @@
-/* SECCIÓN MENÚ */
+/* Menu*/
 .menu-section {
   padding: 72px 0 90px;
   background-color: #FAF6F0;
 }
 
-/* BARRA DE BOTONES DE FILTRO */
+/* Filter Bar */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@
   margin-bottom: 36px;
 }
 
-/* CUADRÍCULA DE TARJETAS DEL MENÚ */
+/* Menu grid/cards */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -61,7 +61,7 @@
   box-shadow: 0 12px 24px rgba(62, 39, 35, 0.14);
 }
 
-/* Clase controlada por JavaScript para ocultar tarjetas filtradas */
+/* JavaScript-controlled class for hiding filtered cards */
 .menu-card.hidden {
   display: none;
 }

@@ -61,7 +61,7 @@
   box-shadow: 0 12px 24px rgba(62, 39, 35, 0.14);
 }
 
-/* Controlled by JavaScript when filtering */
+/* JavaScript-controlled class for hiding filtered cards */
 .gallery-card.hidden {
   display: none;
 }
