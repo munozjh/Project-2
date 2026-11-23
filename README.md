@@ -21,7 +21,7 @@ A warm, responsive coffeehouse and bakery website inspired by the cozy 1990s sit
 
 - HTML5
 - CSS3 (Flexbox, CSS Grid & Media Queries)
-- Vanilla JavaScript (DOM manipulation, filtering & form validation)
+- JavaScript (DOM manipulation, filtering & form validation)
 - GitHub Pages & Netlify
 
 ## 🚀 How To Run
